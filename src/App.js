@@ -2,7 +2,8 @@
 import React from 'react';
 import './App.css';
 import ItemListContainer from './components/ItemListContainer';
-import Navbar from './components/Navbar';
+import { Layout } from './components/layout/layout';
+
 
 
 
@@ -11,11 +12,12 @@ import Navbar from './components/Navbar';
 function App() {
   
   return (
+    <Layout>
     <div className="App">
-      <Navbar />
       <ItemListContainer
         greetings={'Bienvenido a nuestra tienda galeria!'} />
     </div>
+    </Layout>
   );
 }
 

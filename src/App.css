@@ -97,6 +97,10 @@ body{
   display: flex;
 }
 .itemCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
 }
 .itemCard img{
