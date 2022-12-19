@@ -98,6 +98,13 @@ const CheckoutView = () => {
         <span>
           Total a pagar: <strong>${totalAmount}</strong>
         </span>
+        {items.map((item)=>{
+          return(
+            <div>
+              <p>Cantidad de productos: {item.quantityAdded}</p>
+            </div>
+          )
+        })}
         <button
           type="submit"
           disabled={isLoading}
