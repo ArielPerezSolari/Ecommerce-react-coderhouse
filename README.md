@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Proyecto final para Coderhouse React JS 
+el proyecto es un sitio web ( e commerce) hecho en react en el entorno "create react app" que vende piezas de arte!
+solo una libreria usada "Sweetalert"
+CSS hecho a mano
+base de datos Firestore y storage de firebase
+
+implementacion de componentes, vistas, react router, context y hooks personalizados.
+
 ## Available Scripts
 
 In the project directory, you can run:
