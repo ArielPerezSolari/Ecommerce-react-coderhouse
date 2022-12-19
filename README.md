@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-#Proyecto final para Coderhouse React JS
+# Proyecto final para Coderhouse React JS
   el proyecto es un sitio web ( e commerce) hecho en react en el entorno "create react app" que vende piezas de arte!
   solo una libreria usada "Sweetalert"
   CSS hecho a mano
