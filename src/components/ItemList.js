@@ -5,11 +5,11 @@ import '../App.css'
 
 
 
-const ItemList = ({items}) => {
+const ItemList = ({products}) => {
     return (
         <ul className="cardHolder">
-            {items.map((item) => (
-            <Item  item={item} key={item.id} /> ))}
+            {products.map((product) => (
+            <Item  product={product}  key={product.id} /> ))}
         </ul>
         
     )
