@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Layout } from "../components/layout/layout";
 import { CartContext } from "../context/cartContext";
 import './checkout.css'
+import Swal from "sweetalert2";
 
 
 // firebase
@@ -13,6 +14,7 @@ import {
   getFirestore,
   updateDoc,
 } from "firebase/firestore";
+
 
 const CheckoutView = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -67,7 +69,11 @@ const CheckoutView = () => {
           .then(() => {
             clear();
             setIsLoading(false);
-            alert("Compra finalizada" + itemRef);
+            Swal.fire(
+              'Compra realizada con exito',
+              ' se te enviara un mail con las instrucciones!',
+              'Success'
+          )
             navigate("/");
           })
           .catch((err) => console.error(err));
@@ -75,6 +81,9 @@ const CheckoutView = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [updatingProducts]);
+
+
+
 
   return (
     <Layout>
